@@ -19,5 +19,15 @@ public class Huurderlijst {
     public Boolean addToLijst(Huurder h){
         return huurderArrayList.add(h);
     }
+    public String printHuurders(){
+        String result = "";
+        int i = 1;
+        for (Huurder huurder : huurderArrayList){
+            result += i + ") " + huurder.getNaam() + "\n";
+            i++;
+        }
+        return result;
+    }
+
 
 }
