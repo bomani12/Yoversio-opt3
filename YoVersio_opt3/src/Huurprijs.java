@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 public class Huurprijs {
 
     public Double BerekenHuurPrijs(Huurder huurder, Voertuig voertuig, Date huurdatum, Date einddatum){
-        Double prijs = null;
+        Double prijs = 0.00;
         if (huurder.getSchadeHistorie() == true){
             prijs += 10;
         }
